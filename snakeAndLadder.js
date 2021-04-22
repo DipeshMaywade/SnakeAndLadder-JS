@@ -1,6 +1,7 @@
-let position = 0;
 const LADDER = 1;
 const SNAKE = 2;
+let position = 0;
+let count = 0;
 
 while (position < 100) {
 
@@ -42,4 +43,7 @@ while (position < 100) {
     else {
         console.log("Player is Not Playing Stay at Same Position: " + position);
     }
+    console.log("Player Current Position Is: "+ position );
+    count++
 }
+console.log("Number Of Times The Dice Was Roll: "+count);
