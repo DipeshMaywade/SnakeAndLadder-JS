@@ -1,5 +1,11 @@
-main = ()=>{
-    let playerPosition = 0;
-    console.log(`Game Start at: ${playerPosition}`);
+let position = 0;
+
+rollDice = ()=>{
+    let diceNumber =  (Math.floor(Math.random()*10)%6)+1;
+    return diceNumber
 }
-main();
+
+position = position + rollDice();
+
+console.log(`player got: ${position}`);
+
